@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fav-BINGO</title>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .cell {
+            flex: 1;
+            border: 1px solid white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #bingoCenter {
+            font-weight: bold;
+            background-color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            color: aqua;
+        }
+
+        h2 {
+            text-align: center;
+            color: yellow;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        .image {
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    <h1>fav-bingoは、誰かのおすすめをゲーム感覚で楽しめるBINGOです</h1>
+
+<body bgcolor="black" , text="white">
+    <h2>★fav-BINGOは、誰かのおすすめをゲーム感覚で楽しめるBINGOです★</h2>
+    <h1>今回は「まつこ　おすすめ　東京スイーツ店　BINGO」</h1>
+
+    <div class="image">
+        <img src="/party_bingo_taikai_man.png" alt="">
+    </div>
+
 
     <div id="bingoBoard"></div>
 
+    <h3>ーーーー食べたお店をTAP！たてよこななめが揃うとBINGO！ーーーー</h3>
+
     <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
-   
+
     <script src="./js/bingo.js"></script>
 
 
 
 </body>
+
 </html>
